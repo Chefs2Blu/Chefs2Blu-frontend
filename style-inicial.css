@@ -1,0 +1,47 @@
+.btn{
+    background-color: antiquewhite;
+    padding: 7px;
+    border-radius: 10%;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-td{
+    background-color: rgb(209, 134, 35);
+    padding: 7px;
+    border-radius: 10%;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 33%;
+    margin-right: 33%;
+    min-height: 5vh;
+}
+.badge{
+    background-color: #EA804C;
+}
+
+.badge a{
+color: aliceblue;
+
+}
+
+main{
+    background-color: #FFF1C1;
+}
+
+.carousel-item{
+    max-height: 800px;
+}
+
+.alex{
+    font-family:'Alex Brush';
+}
+
+.open{
+    font-family: 'Open Sans';
+}
