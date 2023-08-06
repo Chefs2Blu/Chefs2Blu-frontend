@@ -1,8 +1,8 @@
 const categorias = {
-    pratoPrincipal: "Prato Principal",
-    bebida: "Bebida",
-    sobremesa: "Sobremesa"
-}
+  pratoPrincipal: "Prato Principal",
+  bebida: "Bebida",
+  sobremesa: "Sobremesa",
+};
 
 const todasReceitas = [
     {
@@ -26,17 +26,19 @@ const todasReceitas = [
 
 ];
 
-
-function renderReceitar() {
-    
-}
+function renderReceitar() {}
 
 function filtroReceitasCategoria(categoria, receitas = todasReceitas) {
-    return receitas.filter(e => e.category === categoria);
+  return receitas.filter((e) => e.category === categoria);
 }
 
 function filtroReceitasNome(nome, receitas = todasReceitas) {
-    return receitas.filter(e => e.name.includes(nome));
+  return receitas.filter((e) => e.name.includes(nome));
+}
+// Tela de contato
+
+function msg() {
+  document.getElementById("formularioContato").reset();
 }
 
 const receitasContainer = document.getElementById("receitas-container");
