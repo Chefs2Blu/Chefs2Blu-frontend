@@ -8,7 +8,7 @@ const todasReceitas = [
     {
         id: 1,
         name: "suco de morango",
-        image: "url",
+        image: "https://www.dicasdemulher.com.br/wp-content/uploads/2021/08/suco-de-morango-00.jpeg",
         ingredients: ["morangos", "açucar",],
         instructions: ["junta tudo e mexe",],
         tips: ["cuida pra n mexer por horas",],
@@ -38,3 +38,24 @@ function filtroReceitasCategoria(categoria, receitas = todasReceitas) {
 function filtroReceitasNome(nome, receitas = todasReceitas) {
     return receitas.filter(e => e.name.includes(nome));
 }
+
+const receitasContainer = document.getElementById("receitas-container");
+
+    todasReceitas.forEach(receita => {
+        const receitaDiv = document.createElement("div");
+        receitaDiv.classList.add("receita-item");
+
+        const receitaImg = document.createElement("img");
+        receitaImg.src = receita.image;
+        receitaImg.alt = receita.name;
+        receitaImg.width = 200;
+
+        const receitaBtn = document.createElement("button");
+        receitaBtn.classList.add("btn", "btn-secondary");
+        receitaBtn.textContent = receita.name;
+
+        receitaDiv.appendChild(receitaImg);
+        receitaDiv.appendChild(receitaBtn);
+
+        receitasContainer.appendChild(receitaDiv);
+    });
