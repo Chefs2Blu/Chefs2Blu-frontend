@@ -1,0 +1,146 @@
+/* font-family: 'Alex Brush', cursive; */
+/* font-family: 'Open Sans', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.alex {
+  font-family: "Alex Brush";
+  font-size: 40px;
+}
+.background-main {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.background-main::before {
+  content: "";
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("../../imgs/img-contato.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  margin-bottom: 20px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.background-main h1 {
+  color: #facf7d;
+  font-size: 70px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+.formulario-main {
+  margin: 0 auto;
+  background-color: white;
+  width: 50%;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 1px solid #a69a90;
+  box-shadow: 0 4px 8px #999;
+  /* box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.2); */
+  font-family: "Open Sans", sans-serif;
+}
+
+.formulario-main h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ea804c;
+}
+.formulario-main input,
+.formulario-main textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1em;
+  font: 1em sans-serif;
+  border-radius: 5px;
+  border: 1px solid #facf7d;
+}
+.formulario-main input:focus,
+.formulario-main textarea:focus {
+  border-color: #facf7d !important;
+}
+.formulario-main input:invalid,
+.formulario-main textarea:invalid {
+  border-color: #facf7d;
+}
+.formulario-main input:valid,
+.formulario-main textarea:valid {
+  border-color: rgb(74, 183, 74);
+}
+.formulario-main label {
+  font-size: 16px;
+  padding-bottom: 5px;
+  display: inline-block;
+  color: #ea804c;
+}
+
+.formulario-main button {
+  background-color: white;
+  color: #facf7d;
+  border: 1px solid #facf7d;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+}
+.formulario-main button:hover {
+  background-color: #facf7d;
+  color: #f7f7f7;
+}
+.redes-sociais-main {
+  display: block;
+}
+.redes-sociais-main h3 {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 5px;
+}
+.redes-sociais-main li {
+  color: rgba(0, 0, 0, 0.5);
+}
+.redes-sociais-main a {
+  font-size: 23px;
+  margin: 5px;
+  text-decoration: none;
+  color: inherit;
+}
+.footer-contato {
+  padding: 40px 20px 0 20px;
+  margin-top: 20px;
+  background-color: #a69a90;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+.footer-contato .div-footer {
+  border-top: 1px solid white;
+}
+.footer-contato p {
+  margin: 20px;
+  font-size: 14px;
+}
+.footer-contato a {
+  font-size: 20px;
+  margin: 3px 10px 0 5px;
+  text-decoration: none;
+  color: inherit;
+}
+:-moz-placeholder {
+  color: #ccc;
+}
+::-webkit-input-placeholder {
+  color: #ccc;
+}
