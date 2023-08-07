@@ -39,6 +39,7 @@ function filtroReceitasNome(nome, receitas = todasReceitas) {
 
 function msg() {
   document.getElementById("formularioContato").reset();
+    return receitas.filter(e => e.name.includes(nome));
 }
 
 const receitasContainer = document.getElementById("receitas-container");
@@ -61,3 +62,11 @@ const receitasContainer = document.getElementById("receitas-container");
 
         receitasContainer.appendChild(receitaDiv);
     });
+
+
+// Tela de contato
+
+function msg() {
+  document.getElementById("formularioContato").reset();
+}
+
