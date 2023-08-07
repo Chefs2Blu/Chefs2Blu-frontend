@@ -112,9 +112,35 @@
           required
           maxlength="100"
         ></textarea>
-        <button type="submit" id="button">Enviar Mensagem</button>
+        <button type="submit" msg()>Enviar Mensagem</button>
       </form>
+      <div
+        class="animation"
+        role="alert"
+        id="success-message"
+        style="display: none"
+      >
+        Mensagem enviada com sucesso!
+      </div>
+      <script>
+        // Seleciona o formulário e o elemento da mensagem de sucesso
+        const form = document.querySelector("#contactForm");
+        const successMessage = document.querySelector("#success-message");
+
+        // Adiciona um ouvinte de evento para o envio do formulário
+        form.addEventListener("submit", (event) => {
+          event.preventDefault(); // Impede o envio padrão do formulário
+
+          // Validação do formulário aqui
+
+          // Se a validação for bem-sucedida, exibe a mensagem de sucesso
+          successMessage.style.display = "block";
+
+          form.reset();
+        });
+      </script>
     </div>
+
     <footer class="footer-contato">
       <div
         class="div-footer d-flex flex-wrap justify-content-between align-items-center"
