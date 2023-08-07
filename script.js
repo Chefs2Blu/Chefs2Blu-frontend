@@ -9,9 +9,9 @@ const todasReceitas = [
         id: 1,
         name: "suco de morango",
         image: "https://www.dicasdemulher.com.br/wp-content/uploads/2021/08/suco-de-morango-00.jpeg",
-        ingredients: ["morangos", "açucar",],
-        instructions: ["junta tudo e mexe",],
-        tips: ["cuida pra n mexer por horas",],
+        ingredients: ["morangos", "açucar","1 litro de água"],
+        instructions: ["Bata o morango, a água e o açúcar no liquidificador e leva a geladeira",],
+        tips: ["Caso queira deixar ainda melhor, adicione um pouco de leite condensado na hora de bater",],
         category: categorias.bebida
     },
     {
