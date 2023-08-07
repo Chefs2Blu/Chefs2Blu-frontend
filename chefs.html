@@ -12,6 +12,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="chefes.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"
         defer></script>
@@ -24,16 +28,16 @@
     <div class="navBar">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand alex" href="#">Chefs2Blu</a>
+              <a class="navbar-brand alex" href="index.html">Chefs2Blu</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#">Início</a>
-                  <a class="nav-link" href="#">Receitas</a>
+                  <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                  <a class="nav-link" href="pagina-receitas.html">Receitas</a>
                   <a class="nav-link" href="#">Chefs</a>
-                  <a class="nav-link" href="#">Contatos</a>
+                  <a class="nav-link" href="contato.html">Contatos</a>
                 </div>
               </div>
             </div>
@@ -191,25 +195,28 @@
     </section>
 </main>
 
-<footer style="padding-top: 80px; padding-bottom: 50px;">
-  <div class="container text-center">
-      <div class="row ">
-      <div class="row col-6 mx-auto">
-        <div class="col">
-          <h5 style="color: #4a403d;">Contato</h5>
-          <p>TEL: +00 (00) 00000-0000</p>
-          <p>E-MAIL: chefstoblu@email.com</p>
-        </div>
-        <div class="col">
-        </div>
-        <div class="col d-flex flex-column">
-          <span class="badge  mt-1"><img src="imgs/icons/face.png" style="width: 30px;" alt=""> <a href="">@Chefs2Blu</a></span>
-          <span class="badge  mt-1"><img src="imgs/icons/insta.png" style="width: 30px;" alt=""> <a href="">@Chefs2Blu</a></span>
-          <span class="badge  mt-1"><img src="imgs/icons/tt.png" style="width: 30px;" alt=""> <a href="">@Chefs2Blu</a></span>
-          <span class="badge  mt-1"><img src="imgs/icons/tktk.png" style="width: 30px;" alt=""> <a href="">@Chefs2Blu</a></span>
-        </div>
-      </div>
+<footer class="footer-contato">
+  <div
+    class="div-footer d-flex flex-wrap justify-content-between align-items-center"
+  >
+    <div class="col-md-4 d-flex align-items-center">
+      <p>&copy; 2023 Chefs2Blu, Inc. Todos os direitos reservados.</p>
     </div>
+    <ul class="nav col-md-2 justify-content-center list-unstyled d-flex">
+      <li class="ms-3">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </li>
+      <li class="ms-3">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+      </li>
+      <li class="ms-3">
+        <a href="#"><i class="bi bi-youtube"></i></a>
+      </li>
+      <li class="ms-3">
+        <a href="#"><i class="bi bi-tiktok"></i></a>
+      </li>
+    </ul>
+  </div>
 </footer>
 
 </body>
