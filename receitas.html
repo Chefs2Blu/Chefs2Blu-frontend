@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chefs2Blu - Receitas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/receitas.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"
+    defer></script>
+  <script src="/scripts/receitas.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <!-- Nav Bar -->
+    <div class="navBar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand alex" href="#">Chefs2Blu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Início</a>
+              <a class="nav-link" href="#">Receitas</a>
+              <a class="nav-link" href="#">Chefs</a>
+              <a class="nav-link" href="#">Contatos</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="receitas-inicial">
+      <div class="receitas-inicial">
+        <h1 class="title">RECEITAS</h1>
+      </div>
+      <div class="receita-categoria">
+        <button type="button" class="btn btn-secondary" onclick="setCategoria(categorias.pratoPrincipal)">Pratos
+          Principais</button>
+        <button type="button" class="btn btn-secondary" onclick="setCategoria(categorias.sobremesa)">Sobremesas</button>
+        <button type="button" class="btn btn-secondary" onclick="setCategoria(categorias.bebida)">Bebidas</button>
+        <button type="button" class="btn btn-secondary" onclick="setCategoria('')">Reset filtro</button>
+      </div>
+      <section class="receitas-content">
+        <div id="receitas-container" class="receitas-img">
+        </div>
+      </section>
+    </section>
+    <section class="overlay hide">
+      <div class="overlay blur" onclick="escondeReceita()"></div>
+      <div class="receita">
+        <!-- <span onclick="escondeReceita()">&laquo</span>
+        <h1>nome receita</h1>
+        <img src="https://www.dicasdemulher.com.br/wp-content/uploads/2021/08/suco-de-morango-00.jpeg" alt="">
+        <div class="receita-ingredientes">
+          <h2>Ingredientes</h2>
+          <ul>
+            <li>Morango</li>
+            <li>Morango</li>
+          </ul>
+        </div>
+        <div class="receita-passos">
+          <h2>Passos</h2>
+          <ol>
+            <li>Pudim</li>
+            <li>Pudim</li>
+            <li>Pudim</li>
+            <li>Pudim</li>
+            <li>Pudim</li>
+            <li>Pudim</li>
+            <li>Pudim</li>
+            <li>Pudim</li>
+            <li>Pudim</li>
+          </ol>
+        </div> -->
+      </div>
+    </section>
+  </main>
+
+
+  <footer style="padding-top: 80px; padding-bottom: 50px;">
+    <div class="container text-center">
+      <div class="row ">
+        <div class="row col-6 mx-auto">
+          <div class="col">
+            <h5 style="color: #4a403d;">Contato</h5>
+            <p>TEL: +00 (00) 00000-0000</p>
+            <p>E-MAIL: chefstoblu@email.com</p>
+          </div>
+          <div class="col">
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="badge  mt-1"><img src="imgs/icons/face.png" style="width: 30px;" alt=""> <a
+                href="">@Chefs2Blu</a></span>
+            <span class="badge  mt-1"><img src="imgs/icons/insta.png" style="width: 30px;" alt=""> <a
+                href="">@Chefs2Blu</a></span>
+            <span class="badge  mt-1"><img src="imgs/icons/tt.png" style="width: 30px;" alt=""> <a
+                href="">@Chefs2Blu</a></span>
+            <span class="badge  mt-1"><img src="imgs/icons/tktk.png" style="width: 30px;" alt=""> <a
+                href="">@Chefs2Blu</a></span>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+</body>
+
+</html>
