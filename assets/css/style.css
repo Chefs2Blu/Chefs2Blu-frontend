@@ -10,6 +10,7 @@ a {
     color: initial;
     text-decoration: initial;
 }
+
 /**************************** css pagina receitas***********************/
 .receitas-content {
     margin-top: 20px;
@@ -50,4 +51,9 @@ a {
 
 .receita-item button {
     margin-top: 10px;
+}
+
+.alex {
+    font-family: "Alex Brush";
+    font-size: 40px;
 }

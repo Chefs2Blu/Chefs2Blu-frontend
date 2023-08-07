@@ -8,9 +8,9 @@ const todasReceitas = [
     {
         name: "suco de morango",
         image: "https://www.dicasdemulher.com.br/wp-content/uploads/2021/08/suco-de-morango-00.jpeg",
-        ingredients: ["morangos", "açucar",],
-        instructions: ["junta tudo e mexe",],
-        tips: ["cuida pra n mexer por horas",],
+        ingredients: ["morangos", "açucar","1 litro de água"],
+        instructions: ["Bata o morango, a água e o açúcar no liquidificador e leva a geladeira",],
+        tips: ["Caso queira deixar ainda melhor, adicione um pouco de leite condensado na hora de bater",],
         category: categorias.bebida
     },
     {
@@ -53,6 +53,7 @@ const todasReceitas = [
         tips: ["cuida pra n mexer por horas",],
         category: categorias.sobremesa
     },
+
 ];
 
 (() => {
@@ -68,6 +69,13 @@ function filtroReceitasCategoria(categoria, receitas = todasReceitas) {
 }
 
 function filtroReceitasNome(nome, receitas = todasReceitas) {
+  return receitas.filter((e) => e.name.includes(nome));
+}
+
+// Tela de contato
+
+function msg() {
+  document.getElementById("formularioContato").reset();
     return receitas.filter(e => e.name.includes(nome));
 }
 
@@ -92,8 +100,40 @@ todasReceitas.forEach(receita => {
     receitasContainer.appendChild(receitaDiv);
 });
 
+
 // Tela de contato
 
 function msg() {
     document.getElementById("formularioContato").reset();
 }
+function validateForm() {
+  // Obtém os valores dos campos
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  // Validação dos campos
+  if (name.trim() === "") {
+    alert("Por favor, informe o seu nome.");
+    return false;
+  }
+
+  if (email.trim() === "") {
+    alert("Por favor, informe o seu email.");
+    return false;
+  }
+
+  if (message.trim() === "") {
+    alert("Por favor, digite sua mensagem.");
+    return false;
+  }
+
+  return true;
+}
+
+// Event listener para o clique no botão "Enviar mensagem"
+document.getElementById("button").addEventListener("click", function (event) {
+  if (!validateForm()) {
+    event.preventDefault(); // Impede o envio do formulário se a validação falhar
+  }
+});

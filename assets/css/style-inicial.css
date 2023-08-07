@@ -40,8 +40,32 @@ main{
 
 .alex{
     font-family:'Alex Brush';
+
+    font-size: xx-large;
+
 }
 
 .open{
     font-family: 'Open Sans';
 }
+
+.footer-contato {
+    padding: 40px 20px 0 20px;
+    margin-top: 20px;
+    background-color: #a69a90;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+  }
+  .footer-contato .div-footer {
+    border-top: 1px solid white;
+  }
+  .footer-contato p {
+    margin: 20px;
+    font-size: 14px;
+  }
+  .footer-contato a {
+    font-size: 20px;
+    margin: 3px 10px 0 5px;
+    text-decoration: none;
+    color: inherit;
+  }
