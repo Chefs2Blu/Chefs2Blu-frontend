@@ -148,7 +148,7 @@ function showReceitaById(id) {
         <div class="receita-passos">
             <h2>Passos</h2>
             <ol>
-                ${receitaSelecionada.instructions.map((e, i) => `<li>${i + 1} - ${e}</li>`)}
+                ${receitaSelecionada.instructions.map((e, i) => `<li>${i + 1} - ${e}</li>`).join('')}
             </ol>
         </div>
     `;
