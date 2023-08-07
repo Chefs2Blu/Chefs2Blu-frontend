@@ -10,6 +10,26 @@
   font-family: "Alex Brush";
   font-size: 40px;
 }
+#button-voltar {
+  background-color: white;
+  color: rgb(33, 32, 32);
+  border: 1px solid #a69a90;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 20px;
+  color: #a69a90;
+}
+#button-voltar:hover {
+  background-color: #999;
+  color: #f7f7f7;
+}
+#button-voltar a {
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+}
 .background-main {
   min-height: 50vh;
   display: flex;
@@ -100,6 +120,17 @@
   background-color: #facf7d;
   color: #f7f7f7;
 }
+.animation {
+  width: 150px;
+  height: 100px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 70%;
+  border-radius: 5px;
+  color: #f7f7f7;
+  background-color: rgb(74, 183, 74);
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 .redes-sociais-main {
   display: block;
 }
@@ -128,8 +159,13 @@
 .footer-contato .div-footer {
   border-top: 1px solid white;
 }
+.footer-contato h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  text-align: center;
+}
 .footer-contato p {
-  margin: 20px;
+  margin: 10px;
   font-size: 14px;
 }
 .footer-contato a {
@@ -138,9 +174,19 @@
   text-decoration: none;
   color: inherit;
 }
+
 :-moz-placeholder {
   color: #ccc;
 }
 ::-webkit-input-placeholder {
   color: #ccc;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px);
+  }
 }
