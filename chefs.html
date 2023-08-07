@@ -11,18 +11,47 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="chefes.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"
         defer></script>
-    <script src="script.js" defer></script>
+    <script src="chefe.js" defer></script>
 </head>
 <body>
     
+  <header>
+    <!-- Nav Bar -->
+    <div class="navBar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand alex" href="#">Chefs2Blu</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Início</a>
+                  <a class="nav-link" href="#">Receitas</a>
+                  <a class="nav-link" href="#">Chefs</a>
+                  <a class="nav-link" href="#">Contatos</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+</header>
+
 <main>
 
-<div>
-    <img src="" alt="">
+<div class="foto-tela">
+    <img src="chefs/FotoLinda.png"  class="foto">
+</div>
+
+<div class="main-title">
+  <div class="line"></div>
+  <h1 >Nossos Chefs</h1>
+  <div class="line"></div>
 </div>
 
     <section class="chefs">
@@ -32,7 +61,18 @@
                 <img src="chefs/fogaca.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title chef-title">Henrique Fogaça</h5>
-                  <p class="card-text chef-text" id="1">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="card-text chef-desc" id="1"> 
+                  <p class="card-text chef-text" id="1">Henrique Aranha Fogaça (Piracicaba, 1º de abril de 1974) é um chef de cozinha, empresário, skatista e cantor brasileiro, conhecido por ser um dos jurados da versão brasileira do talent show culinário MasterChef, transmitido pela Band. Além disso, Fogaça é vocalista e compositor da banda de hardcore Oitão.</p>
+                  <a href="https://twitter.com/fogaca_henrique" target="_blank" class="twitter">
+                    <button class="btn btn-sucess ">
+                      
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        
+                      </svg>
+                    </button>
+                    </a>
+                </div>
                 </div>
               </div>
             </div>
@@ -41,7 +81,18 @@
                 <img src="chefs/jacquin.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title chef-title">Érick Jacquin</h5>
-                  <p class="card-text chef-text" id="2">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="card-text chef-desc" id="2">
+                  <p class="card-text chef-text" >Érick Jacquin (Saint-Amand-Montrond, 9 de dezembro de 1964) é um chef de cozinha francês, naturalizado brasileiro, que atua no Brasil. Tornou-se mais conhecido após entrar como jurado no talent show MasterChef, transmitido no Brasil pela Rede Bandeirantes e pelo Discovery Home & Health. </p>
+                  <a href="https://twitter.com/erickjacquin" target="_blank" class="twitter">
+                  <button class="btn btn-sucess ">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue" class="bi bi-twitter" viewBox="0 0 16 16">
+                      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                      
+                    </svg>
+                  </button>
+                  </a>
+                </div>
                 </div>
               </div>
             </div>
@@ -50,8 +101,22 @@
                 <img src="chefs/paola_carosella_2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title chef-title">Paola Carosella</h5>
-                  <p class="card-text chef-text" id="3">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  <div class="card-text chef-desc" id="3">
+                  <p class="card-text chef-text">Paola Florencia Carosella (Buenos Aires, 30 de outubro de 1972) é uma chef de cozinha e empresária. É dona do restaurante Arturito e do café La Guapa. Ficou conhecida ao ser a jurada da versão brasileira do talent show culinário MasterChef, transmitido pela Band, participando até 2020. Foi eleita a melhor chef de 2014, pelo guia da Folha de São Paulo.</p>
+                  <a href="https://twitter.com/PaolaCarosella" target="_blank" class="twitter">
+                    <button class="btn btn-sucess">
+                      
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        
+                      </svg>
+                    </button>
+                    </a>
+
+
                 </div>
+                </div>
+
               </div>
             </div>
             <div class="col">
@@ -59,13 +124,93 @@
                 <img src="chefs/alex-atala.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title chef-title">Alex Atala</h5>
-                  <p class="card-text chef-text" id="4">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+
+                  <div class="card-text chef-desc" id="4">
+                  <p class="card-text chef-text">Milad Alexandre Mack Atala OMC (São Paulo, 3 de junho de 1968) é um chef de cozinha e restaurateur brasileiro. Eleito chef do ano pelo Guia Quatro Rodas em 2006, o seu restaurante, D.O.M., foi considerado 6º melhor restaurante do mundo e o melhor da América do Sul, lista World’s 50 Best Restaurants de 2013 </p>
+                  <a href="https://twitter.com/alexatala" target="_blank" class="twitter">
+                    <button class="btn btn-sucess ">
+                      
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        
+                      </svg>
+                    </button>
+                    </a>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card chef" id="5">
+                <img src="chefs/AnaMaria.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title chef-title">Ana Maria Braga</h5>
+
+
+                  <div class="card-text chef-desc" id="5">
+                  <p class="card-text chef-text">Ana Maria Braga Maffeis (São Joaquim da Barra, 1º de abril de 1949) é uma apresentadora de televisão, chef de cozinha e jornalista brasileira.
+
+                    Começou sua carreira como jornalista na Rede Tupi de Notícias da extinta Rede Tupi. Desde 1999 apresenta o Mais Você, na TV Globo.</p>
+                  <a href="https://twitter.com/ANAMARIABRAGA" target="_blank" class="twitter">
+                    <button class="btn btn-sucess ">
+                      
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        
+                      </svg>
+                    </button>
+                    </a>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card chef" id="6">
+                <img src="chefs/claude.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title chef-title">Claude Troisgros</h5>
+
+
+                  <div class="card-text chef-desc" id="6">
+                  <p class="card-text chef-text">Claude Troisgros (Roanne, Loire, 9 de abril de 1956) é um chef de cozinha francês, considerado um dos grandes nomes da gastronomia brasileira no momento. Formado pela Escola de Hotelaria Thonon Les Bains, Claude chegou ao Brasil em 1979, através de Gaston Lenotre. Seus cardápios mesclam a técnica francesa aos produtos exóticos e tropicais do Brasil.</p>
+                  <a href="https://twitter.com/C_Troisgros" target="_blank" class="twitter">
+                    <button class="btn btn-sucess ">
+                      
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="blue" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        
+                      </svg>
+                    </button>
+                    </a>
+                </div>
                 </div>
               </div>
             </div>
           </div>
     </section>
 </main>
+
+<footer style="padding-top: 80px; padding-bottom: 50px;">
+  <div class="container text-center">
+      <div class="row ">
+      <div class="row col-6 mx-auto">
+        <div class="col">
+          <h5 style="color: #4a403d;">Contato</h5>
+          <p>TEL: +00 (00) 00000-0000</p>
+          <p>E-MAIL: chefstoblu@email.com</p>
+        </div>
+        <div class="col">
+        </div>
+        <div class="col d-flex flex-column">
+          <span class="badge  mt-1"><img src="imgs/icons/face.png" style="width: 30px;" alt=""> <a href="">@Chefs2Blu</a></span>
+          <span class="badge  mt-1"><img src="imgs/icons/insta.png" style="width: 30px;" alt=""> <a href="">@Chefs2Blu</a></span>
+          <span class="badge  mt-1"><img src="imgs/icons/tt.png" style="width: 30px;" alt=""> <a href="">@Chefs2Blu</a></span>
+          <span class="badge  mt-1"><img src="imgs/icons/tktk.png" style="width: 30px;" alt=""> <a href="">@Chefs2Blu</a></span>
+        </div>
+      </div>
+    </div>
+</footer>
 
 </body>
 </html>

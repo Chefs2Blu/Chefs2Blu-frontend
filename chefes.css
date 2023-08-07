@@ -1,0 +1,76 @@
+body{
+    background-color:#FFF1C1
+}
+
+.foto-tela{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.foto-tela .foto{
+    width: 180vmin;
+    height: 70vmin;
+}
+
+.chefs{
+ margin-top: 3vmin;
+ padding: 5vmin;
+}
+
+
+
+.main-title{
+   text-align: center;
+}
+
+
+
+
+.line{
+    width: 30vi;
+    height: 5px;
+    background-color: #A69A90;
+    border-radius: 30px;
+    margin-left: 35%;
+}
+
+.card .card-img-top{
+    width: 100%;
+    height: 50vmin;
+}
+
+
+.chef{
+    background-color: #A69A90;
+ cursor: pointer;
+
+}
+
+.chef:hover{
+    transform: translateY(-20px);
+}
+
+.chef-title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+.chef-desc{
+    display: none;
+}
+
+.chef-text{    
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-ative{
+    display: flex;
+    
+}
+
+.twitter{
+position: absolute;
+left: 10px;
+bottom: 1%;
+    
+}
