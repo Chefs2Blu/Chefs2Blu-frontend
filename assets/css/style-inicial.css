@@ -46,3 +46,22 @@ main{
 .open{
     font-family: 'Open Sans';
 }
+
+.footer-contato .div-footer {
+    border-top: 1px solid white;
+  }
+  .footer-contato h5 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    text-align: center;
+  }
+  .footer-contato p {
+    margin: 20px;
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  .footer-contato a {
+    text-decoration: none;
+    color: inherit;
+  }
