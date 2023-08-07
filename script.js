@@ -1,8 +1,8 @@
 const categorias = {
-    pratoPrincipal: "Prato Principal",
-    bebida: "Bebida",
-    sobremesa: "Sobremesa"
-}
+  pratoPrincipal: "Prato Principal",
+  bebida: "Bebida",
+  sobremesa: "Sobremesa",
+};
 
 const todasReceitas = [
     {
@@ -23,16 +23,12 @@ const todasReceitas = [
         tips: ["cuida pra n mexer por horas",],
         category: categorias.sobremesa
     },
-
 ];
 
-
-function renderReceitar() {
-    
-}
+function renderReceitar() {}
 
 function filtroReceitasCategoria(categoria, receitas = todasReceitas) {
-    return receitas.filter(e => e.category === categoria);
+  return receitas.filter((e) => e.category === categoria);
 }
 
 function filtroReceitasNome(nome, receitas = todasReceitas) {
@@ -59,3 +55,9 @@ const receitasContainer = document.getElementById("receitas-container");
 
         receitasContainer.appendChild(receitaDiv);
     });
+
+// Tela de contato
+
+function msg() {
+  document.getElementById("formularioContato").reset();
+}
