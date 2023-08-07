@@ -120,6 +120,17 @@
   background-color: #facf7d;
   color: #f7f7f7;
 }
+.animation {
+  width: 150px;
+  height: 100px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 70%;
+  border-radius: 5px;
+  color: #f7f7f7;
+  background-color: rgb(74, 183, 74);
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 .redes-sociais-main {
   display: block;
 }
@@ -169,4 +180,13 @@
 }
 ::-webkit-input-placeholder {
   color: #ccc;
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100px);
+  }
 }

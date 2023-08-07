@@ -35,6 +35,7 @@ function filtroReceitasCategoria(categoria, receitas = todasReceitas) {
 function filtroReceitasNome(nome, receitas = todasReceitas) {
   return receitas.filter((e) => e.name.includes(nome));
 }
+
 // Tela de contato
 
 function msg() {
@@ -100,4 +101,3 @@ document.getElementById("button").addEventListener("click", function (event) {
     event.preventDefault(); // Impede o envio do formulário se a validação falhar
   }
 });
-
