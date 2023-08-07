@@ -10,6 +10,26 @@
   font-family: "Alex Brush";
   font-size: 40px;
 }
+#button-voltar {
+  background-color: white;
+  color: rgb(33, 32, 32);
+  border: 1px solid #a69a90;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 20px;
+  color: #a69a90;
+}
+#button-voltar:hover {
+  background-color: #999;
+  color: #f7f7f7;
+}
+#button-voltar a {
+  font-size: 14px;
+  text-decoration: none;
+  color: inherit;
+}
 .background-main {
   min-height: 50vh;
   display: flex;
@@ -128,8 +148,13 @@
 .footer-contato .div-footer {
   border-top: 1px solid white;
 }
+.footer-contato h5 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  text-align: center;
+}
 .footer-contato p {
-  margin: 20px;
+  margin: 10px;
   font-size: 14px;
 }
 .footer-contato a {
@@ -138,6 +163,7 @@
   text-decoration: none;
   color: inherit;
 }
+
 :-moz-placeholder {
   color: #ccc;
 }
