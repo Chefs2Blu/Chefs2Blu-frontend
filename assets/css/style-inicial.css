@@ -20,6 +20,10 @@
     margin-left: 33%;
     margin-right: 33%;
     min-height: 5vh;
+    overflow: hidden;
+}
+.card-title{
+    overflow: hidden;
 }
 .badge{
     background-color: #EA804C;
@@ -34,8 +38,10 @@ main{
     background-color: #FFF1C1;
 }
 
-.carousel-item{
+.carousel-item img{
     max-height: 800px;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 .alex{
@@ -48,6 +54,25 @@ main{
 .open{
     font-family: 'Open Sans';
 }
+
+.footer-contato .div-footer {
+    border-top: 1px solid white;
+  }
+  .footer-contato h5 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    text-align: center;
+  }
+  .footer-contato p {
+    margin: 20px;
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  .footer-contato a {
+    text-decoration: none;
+    color: inherit;
+  }
 
 .footer-contato {
     padding: 40px 20px 0 20px;
