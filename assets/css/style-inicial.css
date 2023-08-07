@@ -20,6 +20,10 @@
     margin-left: 33%;
     margin-right: 33%;
     min-height: 5vh;
+    overflow: hidden;
+}
+.card-title{
+    overflow: hidden;
 }
 .badge{
     background-color: #EA804C;
@@ -34,8 +38,10 @@ main{
     background-color: #FFF1C1;
 }
 
-.carousel-item{
+.carousel-item img{
     max-height: 800px;
+    overflow: hidden;
+    object-fit: cover;
 }
 
 .alex{
