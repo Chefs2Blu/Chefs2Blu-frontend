@@ -23,6 +23,7 @@ const todasReceitas = [
         tips: ["cuida pra n mexer por horas",],
         category: categorias.sobremesa
     },
+
 ];
 
 function renderReceitar() {}
@@ -32,6 +33,12 @@ function filtroReceitasCategoria(categoria, receitas = todasReceitas) {
 }
 
 function filtroReceitasNome(nome, receitas = todasReceitas) {
+  return receitas.filter((e) => e.name.includes(nome));
+}
+// Tela de contato
+
+function msg() {
+  document.getElementById("formularioContato").reset();
     return receitas.filter(e => e.name.includes(nome));
 }
 
@@ -55,6 +62,7 @@ const receitasContainer = document.getElementById("receitas-container");
 
         receitasContainer.appendChild(receitaDiv);
     });
+
 
 // Tela de contato
 
@@ -92,3 +100,4 @@ document.getElementById("button").addEventListener("click", function (event) {
     event.preventDefault(); // Impede o envio do formulário se a validação falhar
   }
 });
+
