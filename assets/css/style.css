@@ -3,14 +3,20 @@
 
 * {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
+a {
+    color: initial;
+    text-decoration: initial;
+}
 /**************************** css pagina receitas***********************/
-.receitas-content{
+.receitas-content {
     margin-top: 20px;
     /*background-color: bisque;*/
 }
-.receita-categoria{
+
+.receita-categoria {
     /*background-color: aqua;*/
     justify-content: center;
     display: flex;
@@ -18,11 +24,12 @@
     padding: 20px;
 }
 
-.receitas-inicial{
+.receitas-inicial {
     width: 80%;
     margin: 20px auto;
     text-align: center;
 }
+
 .receitas-img {
     display: flex;
     flex-wrap: wrap;
