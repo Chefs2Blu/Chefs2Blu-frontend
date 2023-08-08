@@ -21,7 +21,7 @@ const todasReceitas = [
         tips: ["espere esfriar para desenformar",],
         category: categorias.sobremesa
     },
-    {   
+    {
         name: "Moscow Mule",
         image: "imgs/moscow.webp",
         ingredients: ["50 ml de vodka", "100 ml de água com gás", "½ colher (sopa) de açúcar", "3 colheres (chá) de xarope de gengibre", "suco de ½ limão", "gelo"],
@@ -33,7 +33,7 @@ const todasReceitas = [
         name: "Lasanha de carne moída",
         image: "imgs/lasanha.jpeg",
         ingredients: ["500 g de massa de lasanha", "2 caixas de creme de leite", "3 colheres de farinha de trigo", "500 g de mussarela", "2 copos de leite", "3 colheres de óleo", "3 dentes de alho amassados", "500 g de carne moída", "3 colheres de manteiga", "500 g de presunto", "sal a gosto", "1 cebola ralada", "1 caixa de molho de tomate", "1 pacote de queijo ralado"],
-        instructions: ["Lasanha", "Cozinhe a massa segundo as orientações do fabricante, despeje em um refratário com água gelada para não grudar e reserve.", "Molho à bolonhesa", "Refogue o alho, a cebola, a carne moída, o molho de tomate, deixe cozinhar por 3 minutos e reserve.", "Molho branco", "Derreta a margarina, coloque as 3 colheres de farinha de trigo e mexa.", "Despeje o leite aos poucos e continue mexendo.", "Por último, coloque o creme de leite, mexa por 1 minuto e desligue o fogo.", "Montagem", "Despeje uma parte do molho à bolonhesa em um refratário, a metade da massa, a metade do presunto, a metade da mussarela, todo o molho branco e o restante da massa.","Repita as camadas até a borda do recipiente.", "Finalize com o queijo ralado e leve ao forno alto (220° C), preaquecido, por cerca de 20 minutos."],
+        instructions: ["Lasanha", "Cozinhe a massa segundo as orientações do fabricante, despeje em um refratário com água gelada para não grudar e reserve.", "Molho à bolonhesa", "Refogue o alho, a cebola, a carne moída, o molho de tomate, deixe cozinhar por 3 minutos e reserve.", "Molho branco", "Derreta a margarina, coloque as 3 colheres de farinha de trigo e mexa.", "Despeje o leite aos poucos e continue mexendo.", "Por último, coloque o creme de leite, mexa por 1 minuto e desligue o fogo.", "Montagem", "Despeje uma parte do molho à bolonhesa em um refratário, a metade da massa, a metade do presunto, a metade da mussarela, todo o molho branco e o restante da massa.", "Repita as camadas até a borda do recipiente.", "Finalize com o queijo ralado e leve ao forno alto (220° C), preaquecido, por cerca de 20 minutos."],
         tips: ["capriche no queijo ralado",],
         category: categorias.pratoPrincipal
     },
@@ -48,7 +48,7 @@ const todasReceitas = [
     {
         name: "Bolinho de bacalhau",
         image: "imgs/bolinho_bacalhau.jpg",
-        ingredients: ["300 g de bacalhau dessalgado e desfiado", "1 colher (sopa) de farinha de trigo", "pimenta-do-reino a gosto", "2 colheres (sopa) de cheiro-verde picado", "3 xícara (chá) de batatas cozidas e espremidas","sal a gosto", "3 ovos", "óleo para fritar"],
+        ingredients: ["300 g de bacalhau dessalgado e desfiado", "1 colher (sopa) de farinha de trigo", "pimenta-do-reino a gosto", "2 colheres (sopa) de cheiro-verde picado", "3 xícara (chá) de batatas cozidas e espremidas", "sal a gosto", "3 ovos", "óleo para fritar"],
         instructions: ["Em uma tigela, misture bem todos os ingredientes.", "Com uma colher de sopa, pegue porções de massa, frite em óleo quente até dourar e escorra em papel absorvente."],
         tips: ["Não utilize óleo usado, pois pode deixar o bolinho muito gorduroso",],
         category: categorias.pratoPrincipal
@@ -56,7 +56,7 @@ const todasReceitas = [
     {
         name: "Quentão de vinho",
         image: "imgs/quentao.webp",
-        ingredients: ["2 l de vinho tinto suave", "Meio copo de cachaça", "2 pauzinhos de canela", "8 rodelinhas de gengibre (ou a gosto)", "1 copo de água 200 ml","1 e 1/2 copo de açúcar", "12 cravos (ou a gosto)"],
+        ingredients: ["2 l de vinho tinto suave", "Meio copo de cachaça", "2 pauzinhos de canela", "8 rodelinhas de gengibre (ou a gosto)", "1 copo de água 200 ml", "1 e 1/2 copo de açúcar", "12 cravos (ou a gosto)"],
         instructions: ["Misture todos os ingredientes ao fogo em uma panela.", "Depois que levantar fervura, deixe por mais 10 minutos.", "Está pronto é só servir."],
         tips: ["Sirva a bebida quente",],
         category: categorias.bebida
@@ -153,6 +153,16 @@ function showReceitaById(id) {
 function escondeReceita() {
     overlay.classList.add('hide')
 }
+
+function getQuery() {
+    const querys = window.location.search.substring(1).split('&');
+    querys.forEach(e => {
+        if (e.includes('id')) showReceitaById(Number(e.replace('id=', '')));
+        if (e.includes('categoria')) setCategoria(e.replace('categoria=', '').replace('%20', ' '));
+    })
+}
+
+getQuery()
 
 renderReceitas();
 
