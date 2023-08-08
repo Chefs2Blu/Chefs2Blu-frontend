@@ -1,47 +1,51 @@
 /**************************** css pagina receitas***********************/
-.receitas-content {
-    margin-top: 20px;
-    /*background-color: bisque;*/
+.main-rec{
+    background-color: #FFF1C1;
 }
-
-.receita-categoria {
-    /*background-color: aqua;*/
-    justify-content: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.receitas-inicial {
+.receitas-inicial{
     width: 80%;
     margin: 20px auto;
     text-align: center;
+    
+}
+.receitas-inicial>h1{
+    color: #4a403d;
+    padding: 30px;
+    text-align: center;
+ }
+ .btn-receitas{
+    background-color: orange;
+    color: #4a403d;
+    
+}
+ .btn-categorias{
+    background-color: #4a403d;
+    color: whitesmoke;
+    
+}
+.card-receita{
+    border: none;
+    overflow: hidden;
+}
+.col{
+    border: none;
+    overflow: hidden;
+}
+.text{
+    text-align: center;
 }
 
-.receitas-img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /*padding: 20px;*/
+ 
+.zoomable-img {
+    transition: transform 0.1s ease; 
 }
 
-.receita-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-    cursor: pointer;
+.zoomable-img:hover {
+    transform: scale(1.1); 
 }
-
-.receita-item img {
-    width: 200px;
+div>h5{
+    overflow: hidden; 
 }
-
-.receita-item button {
-    margin-top: 10px;
-    width: 100%;
-}
-
 .overlay {
     width: 100vw;
     height: 100vh;
