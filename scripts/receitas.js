@@ -159,5 +159,15 @@ function escondeReceita() {
     overlay.classList.add('hide')
 }
 
+function getQuery() {
+    const querys = window.location.search.substring(1).split('&');
+    querys.forEach(e => {
+        if (e.includes('id')) showReceitaById(Number(e.replace('id=', '')));
+        if (e.includes('categoria')) setCategoria(e.replace('categoria=', ''));
+    })
+}
+
+getQuery()
+
 renderReceitas();
 
